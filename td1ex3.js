@@ -1,0 +1,11 @@
+const produit={id:1,nom:"souris",prix:20,stock:15};
+const{nom,prix}=produit;
+console.log(nom,prix);
+const{nom:designations,prix:prixProduit}=produit;
+console.log(designations,prixProduit);
+const panier=[{id:1,nom:"souris",prix:20,stock:15},{id:2,nom:"claviers",prix:80,stock:3},{id:3,nom:"ecran",prix:350,stock:15}];
+const monprix=panier.map(({nom,prix})=>({nom,prix}));
+console.log(monprix);
+const nvproduit={id:4,nom:"ecoteur",prix:30,stock:5};
+const nouveauPanier=[...panier,nvproduit];
+console.log(nouveauPanier);
